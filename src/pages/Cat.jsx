@@ -4,6 +4,10 @@ import { useParams, useNavigate } from "react-router-dom";
 const Cat = ({ cats }) => {
   const { catId } = useParams();
 
+  const title = document.title;
+
+  title = "Cat" + " " + id;
+
   const navigate = useNavigate();
 
   let { id, url } = cats.find((cat) => cat.id == catId);
