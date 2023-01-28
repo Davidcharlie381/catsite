@@ -8,7 +8,7 @@ const Cats = ({ cats }) => {
         return (
           <div className="cat h-[300px] w-[300px] rounded-xl overflow-hidden">
             <Link to={`/${id}`} className="block h-[full] w-[full]">
-              <img className="h-[full] w-[full] object-cover" src={url} alt={"cat" + id} />
+              <img className="h-[full] w-[full] object-cover" src={url} alt={"cat" + " " + id} />
             </Link> 
           </div>
         );
