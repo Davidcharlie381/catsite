@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const Cat = ({ cats }) => {
   const { catId } = useParams();
-
-  const title = document.title;
-
-  title = "Cat" + " " + id;
+  
+  useEffect(() => {
+    const title = "Cat" + " " + catId;
+    document.title = title;
+  }, [])
+  
 
   const navigate = useNavigate();
 
